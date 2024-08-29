@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Voting System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Voter Login</h1>
+    <form id="loginForm">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        <button type="submit">Login</button>
+    </form>
+
+    <div id="votingSection" style="display:none;">
+        <h1>Vote for Your Favorite Programming Language</h1>
+        <form id="votingForm">
+            <label>
+                <input type="radio" name="vote" value="Python"> Python
+            </label><br>
+            <label>
+                <input type="radio" name="vote" value="JavaScript"> JavaScript
+            </label><br>
+            <label>
+                <input type="radio" name="vote" value="Java"> Java
+            </label><br>
+            <label>
+                <input type="radio" name="vote" value="C++"> C++
+            </label><br><br>
+            <button type="submit">Submit Vote</button>
+        </form>
+
+        <h2>Results:</h2>
+        <ul id="results">
+            <li>Python: <span id="pythonVotes">0</span> votes</li>
+            <li>JavaScript: <span id="jsVotes">0</span> votes</li>
+            <li>Java: <span id="javaVotes">0</span> votes</li>
+            <li>C++: <span id="cppVotes">0</span> votes</li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
